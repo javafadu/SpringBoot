@@ -1,0 +1,16 @@
+package main;
+
+import service.MailService;
+
+public class MyApplication {
+
+	public static void main(String[] args) {
+
+		
+		MailService theService = new MailService();
+		theService.sendMessage();
+		
+		
+	}
+
+}

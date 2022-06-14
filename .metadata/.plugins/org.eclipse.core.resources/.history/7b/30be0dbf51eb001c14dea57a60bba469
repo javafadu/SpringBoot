@@ -1,0 +1,11 @@
+package com.tpe.service;
+
+public class SMSService implements MessageService {
+
+	@Override
+	public String sentMessage() {
+		
+		return "I am an SMS Service, i sent an SMS";
+	}
+
+}

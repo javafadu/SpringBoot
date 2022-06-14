@@ -1,0 +1,11 @@
+package com.tpe.service;
+
+public class WhatsappService implements MessageService {
+
+	@Override
+	public String sentMessage() {
+		
+		return "I am a Whatsapp Service, i sent a wa message";
+	}
+
+}

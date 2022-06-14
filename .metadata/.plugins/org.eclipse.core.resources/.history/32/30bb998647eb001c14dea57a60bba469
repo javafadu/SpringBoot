@@ -1,0 +1,11 @@
+package service;
+
+public class MailService implements MessageService {
+
+	@Override
+	public String sendMessage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

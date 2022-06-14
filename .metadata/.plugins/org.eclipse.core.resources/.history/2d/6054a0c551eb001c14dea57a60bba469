@@ -1,0 +1,11 @@
+package com.tpe.service;
+
+public class MailService implements MessageService{
+
+	@Override
+	public String sentMessage() {
+		// TODO Auto-generated method stub
+		return "I am a mail service, I sent a message";
+	}
+
+}

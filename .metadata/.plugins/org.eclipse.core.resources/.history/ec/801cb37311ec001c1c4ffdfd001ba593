@@ -1,0 +1,21 @@
+package com.tpe;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.tpe.thirdparty.ThirdPartyComponent;
+
+@Configuration
+@ComponentScan("com.tpe")
+// Bu package altindaki tum class lari tarayacak
+// sayet class larin icinde ilgili spring annotation lari gorurse (component)
+// bean olusturup container a ekleyecek
+public class AppConfiguration {
+	
+	@Bean
+	public ThirdPartyComponent thirdPartyComponent( ) {
+		return new ThirdPartyComponent();
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.tpe.service;
+
+import org.springframework.stereotype.Component;
+
+import com.tpe.repository.MessageRepository;
+
+@Component("whatsappService")
+public class WhatsappService implements MessageService {
+	
+	
+	private MessageRepository repository;
+	
+
+	@Override
+	public String sentMessage() {
+		
+		repository.saveMessage("I am a Whatsapp Service, i sent a wa message");
+		return "I am a Whatsapp Service, i sent a wa message";
+	}
+
+}
