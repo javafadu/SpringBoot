@@ -15,9 +15,9 @@ public class MyApplication {
 				AnnotationConfigApplicationContext(AppConfiguration.class);
 		
 		
-//		MessageService service = context.getBean("whatsappService",MessageService.class);
 		
-//		System.out.println(service.sentMessage());
+//      MessageService service = context.getBean("whatsappService",MessageService.class);
+//	  System.out.println(service.sentMessage());
 		
 		
 		MessageService  service2= context.getBean("mailService",MessageService.class);

@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
 
 import com.tpe.thirdparty.ThirdPartyComponent;
 
@@ -20,8 +21,12 @@ public class AppConfiguration {
 	// ThirdParty bilesenleri Spring container tarafindan olusturulup Container a 
 	// konmasi icin @Bean annotation kullandik
 	@Bean
-	public ThirdPartyComponent thirdPartyComponent( ) {
+	public ThirdPartyComponent thirdPartyComponent() {
 		return new ThirdPartyComponent();
 	}
+	
+
+	
+
 
 }
